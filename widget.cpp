@@ -32,12 +32,15 @@ void Widget::on_search_clicked()
 {
    QString error;
    do{
-        if(ui->musicName->text().isEmpty()){
-           error = QString("请输入歌曲名字或演唱者");
-           break;
+        if(ui->musicName->text().isEmpty())
+		{
+			error = QString("please input music name or singer");
+			//error = QStringLiteral("请输入歌曲名字或演唱者");
+			break;
         }
-        if(ui->musicName->text().length() == 0 ){
-            error = QString("请输入歌曲名字或演唱者");
+        if(ui->musicName->text().length() == 0 )
+		{
+            error = QString("please input music name or singer");
             break;
         }
 

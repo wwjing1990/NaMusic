@@ -10,6 +10,7 @@ void searchM::findMusic(QString name){
 /*
  * https://api.imjad.cn/cloudmusic/?type=search&search_type=1&limit=1024&s=水木年华&offset=0
 */
+    //当前网站以停止运营
     QString url = url0 + QUrl::toPercentEncoding(name) + url1;
     setUrl(url);
     QByteArray json;
